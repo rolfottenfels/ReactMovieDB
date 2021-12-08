@@ -14,7 +14,7 @@ The user can get the latest movies, know about the Diretors or actors, revenue, 
 - Get more infos like costs, revenue, release date.
 
 <p align="center">
-  <img src="https://github.com/rolfottenfels/ReactMovieDB/blob/main/public/layout.jpg" />
+  <img src="https://github.com/rolfottenfels/ReactMovieDB/blob/main/public/app_layout.jpg" />
 </p>
 
 ## How to run it?
