@@ -18,5 +18,9 @@ The user can get the latest movies, know about the Diretors or actors, revenue, 
 </p>
 
 ## How to run it?
-<<<<<<< HEAD
-Clone this repository, then go to the folder '/ReactMovieDB' and run 'npm start'.
+Clone this repository, then go to the folder '/ReactMovieDB':
+git clone https://github.com/rolfottenfels/ReactMovieDB.git
+cd /ReactMovieDB
+
+ Now run: 
+ npm start
