@@ -1,19 +1,22 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+// Config
 import { IMAGE_BASE_URL, POSTER_SIZE } from "../config";
+// Components
+import BreadCrumb from "./BreadCrumb";
 import Grid from "./Grid";
 import Spinner from "./Spinner";
-import BreadCrumb from "./BreadCrumb";
 import MovieInfo from "./MovieInfo";
-import Actor from "./Actor";
+import Actor from './Actor/index';
+// Hook
 import { useMovieFetch } from "../hooks/useMovieFetch";
 
+// Image
 import NoImage from '../images/no_image.jpg'
 
 const Movie = () => {
   const { movieId } = useParams();
-  const { actorId } = useParams();
-
+  
   const { state: movie, loading, error } = useMovieFetch(movieId);
 
   if (loading) return <Spinner />
@@ -26,18 +29,18 @@ const Movie = () => {
       <Grid header='Actors'>
         {movie.actors.map(actor => (
           <Actor key={actor.credit_id}
-            clickable 
             name={actor.name}
             character={actor.character}
-            imageUrl={actor.profile_path ? `${IMAGE_BASE_URL}${POSTER_SIZE}${actor.profile_path}` : NoImage}
+            imageUrl={actor.profile_path 
+              ? `${IMAGE_BASE_URL}${POSTER_SIZE}${actor.profile_path}` 
+              : NoImage
+            }
             // biography={actor.biography}
           />
       ))}
-
       </Grid>
-      {console.log(movie)};
     </>
-  )
+  );
 };
 
 export default Movie;
