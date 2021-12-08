@@ -1,5 +1,5 @@
 // COPIA DO MOVIE.js
-
+/*
 import React from "react";
 import { useParams } from "react-router-dom";
 import { IMAGE_BASE_URL, POSTER_SIZE } from "../config";
@@ -30,3 +30,4 @@ const Actor = () => {
 };
 
 export default Movie;
+*/

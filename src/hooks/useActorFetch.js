@@ -1,3 +1,4 @@
+/*
 import {useState, useEffect} from 'react';
 import API from '../API';
 
@@ -19,6 +20,7 @@ export const useActorFetch = actorId => {
           member => member.job === 'Director'
         );
 */
+/*
         setState({
           ...actor, 
           actors: credits.cast
@@ -34,3 +36,4 @@ export const useActorFetch = actorId => {
   }, [actorId]);
   return { state, loading, error };
 };
+*/
